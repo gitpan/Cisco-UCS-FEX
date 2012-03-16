@@ -1,5 +1,7 @@
 Revision history for Cisco-UCS-FEX
 
-0.01    Date/time
-        First version, released on an unsuspecting world.
+0.1     Fri Mar 16 2012 ltp@cpan.org
+        First version.
 
+0.11    Fri Mar 16 2012 ltp@cpan.org
+        Minor corrections to POD.

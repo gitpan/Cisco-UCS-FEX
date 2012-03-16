@@ -6,7 +6,7 @@ use strict;
 use Carp qw(croak);
 use Scalar::Util qw(weaken);
 
-our $VERSION = "0.1";
+our $VERSION = "0.11";
 
 our @ATTRIBUTES	= qw(discovery dn id model operability perf power presence revision serial side thermal vendor voltage);
 
@@ -26,11 +26,15 @@ Cisco::UCS::FEX - Class for operations with a Cisco UCS FEX.
 
 =head1 SYNOPSIS
 
+    my @fexs = $ucs->chassis(2)->get_fexs;
+
+    print $fexs[0]->thermal;
+
     print $ucs->chassis(1)->fex(1)->model;
 
 =head1 DECRIPTION
 
-Cisco::UCA::FEX is a class for operations with a Cisco UCS FEX.
+Cisco::UCS::FEX is a class providing operations with a Cisco UCS FEX.
 
 Note that you are not supposed to call the constructor yourself, rather a Cisco::UCS::FEX object
 is created automatically by method calls to a L<Cisco::UCS::Chassis> object.
